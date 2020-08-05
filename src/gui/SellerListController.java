@@ -101,7 +101,7 @@ public class SellerListController implements Initializable, DataChangeListener {
 		try {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource(absoluteName));
 			Pane pane = loader.load();
-
+ 
 			SellerFormController controller = loader.getController();
 			controller.setSeller(obj);
 			controller.setSellerService(new SellerService());
